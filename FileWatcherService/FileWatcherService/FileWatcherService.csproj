@@ -34,7 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,7 +52,13 @@
     <Compile Include="FileWatcher.Designer.cs">
       <DependentUpon>FileWatcher.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="FileWatcherServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileWatcherServiceInstaller.Designer.cs">
+      <DependentUpon>FileWatcherServiceInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntryPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

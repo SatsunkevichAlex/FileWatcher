@@ -35,7 +35,7 @@ namespace FileWatcherService
         readonly FileSystemWatcher _watcher;
         private readonly object _obj = new object();
         private bool _enabled = true;
-        private const string FolderForFileWatcher = "D:\\Temp";
+        private const string FolderForFileWatcher = "D:";
 
         public Logger()
         {

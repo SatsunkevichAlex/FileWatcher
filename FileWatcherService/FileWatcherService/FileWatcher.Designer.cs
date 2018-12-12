@@ -1,6 +1,6 @@
 ﻿namespace FileWatcherService
 {
-    partial class FilteWatcher
+    partial class FileWatcher
     {
         /// <summary> 
         /// Required designer variable.

@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FilteWatcher.cs">
+    <Compile Include="FileWatcher.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FilteWatcher.Designer.cs">
-      <DependentUpon>FilteWatcher.cs</DependentUpon>
+    <Compile Include="FileWatcher.Designer.cs">
+      <DependentUpon>FileWatcher.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

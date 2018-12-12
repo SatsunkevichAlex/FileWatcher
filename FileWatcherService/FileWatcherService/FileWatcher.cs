@@ -35,7 +35,7 @@ namespace FileWatcherService
         readonly FileSystemWatcher _watcher;
         private readonly object _obj = new object();
         private bool _enabled = true;
-        private const string FolderForFileWatcher = "D:";
+        private const string FolderForFileWatcher = @"D:\";
 
         public Logger()
         {
@@ -71,7 +71,7 @@ namespace FileWatcherService
         //Files changing
         private void Watcher_Changed(object sender, FileSystemEventArgs e)
         {
-            const string fileEvent = "changes";
+            const string fileEvent = "changed";
             var filePath = e.FullPath;
             RecordEntry(fileEvent, filePath);
         }
